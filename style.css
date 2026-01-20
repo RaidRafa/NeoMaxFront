@@ -1,0 +1,281 @@
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #050505; /* Preto Profundo */
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Container da Seção */
+.apresentacao {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Imagem de Fundo Regulada */
+.img_fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Não distorce a imagem */
+    opacity: 0.4; /* Deixa a imagem sutil para o texto aparecer */
+    z-index: 1;
+}
+
+/* Conteúdo em cima da imagem */
+.conteudo {
+    position: relative;
+    z-index: 2; /* Garante que fica na frente */
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Título com brilho */
+.name_org {
+    font-size: 5rem;
+    color: #39FF14;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(57, 255, 20, 0.6);
+}
+
+/* Texto de Apoio */
+.descricao {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.descricao span {
+    display: block;
+    margin-top: 10px;
+    color: #00F3FF; /* Ciano para destaque */
+    font-weight: bold;
+}
+
+/* Botão Estilo Tech */
+.btn-contato {
+    background: transparent;
+    border: 1px solid #39FF14;
+    color: #39FF14;
+    padding: 15px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 2px;
+}
+
+.btn-contato:hover {
+    background: #39FF14;
+    color: #000;
+    box-shadow: 0 0 30px #39FF14;
+}
+
+/* Seção de Consultoria */
+.consultoria {
+    background-color: #080808;
+    padding: 100px 10% 50px;
+    color: #fff;
+}
+
+.header-consultoria {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header-consultoria h2 {
+    font-size: 2.5rem;
+    color: #39FF14; /* Verde Neon */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.header-consultoria p {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+}
+
+/* Cards de Serviço */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #39FF14;
+    transform: translateY(-10px);
+}
+
+.card .icon {
+    font-size: 0.9rem;
+    color: #39FF14;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Formulário Profissional */
+.form-container {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #000;
+    padding: 40px;
+    border-top: 4px solid #39FF14;
+}
+
+.confirmar_proposta{
+    display: none;
+    justify-content: center;
+    position: relative;
+}
+
+.confirmar_proposta h4{
+    position: absolute;
+    z-index: 20;
+    margin-top: 30px;
+}
+
+.confirmar_proposta h3{
+    margin-left: 10px;
+}
+
+#icon{
+    color: #39FF14;
+    margin-top: 2px;
+}
+
+
+
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #39FF14;
+    outline: none;
+}
+
+.btn-neon-full {
+    width: 100%;
+    padding: 15px;
+    background: #39FF14;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-neon-full:hover {
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+}
+
+.rodape {
+    background-color: #050505;
+    color: #ffffff;
+    padding: 60px 10% 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rodape-conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.rodape-logo h2 {
+    color: #39FF14;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.rodape-logo p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.rodape-links h4, .rodape-contato h4 {
+    color: #39FF14;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.rodape-links ul {
+    list-style: none;
+}
+
+.rodape-links ul li {
+    margin-bottom: 10px;
+}
+
+.rodape-links ul li a {
+    color: #888;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.rodape-links ul li a:hover {
+    color: #39FF14;
+    padding-left: 5px;
+}
+
+.rodape-contato p {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.rodape-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.8rem;
+    color: #555;
+}
