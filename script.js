@@ -12,7 +12,7 @@ btn_submit.addEventListener("click", async function(event){  // async faz espera
         return;
     }
     try{                                                   // try e catch se o servidor estiver fora do ar o site não quebra, exibe que o servidor esta fora do ar
-        const resposta = await fetch('https://neomax.onrender.com', {  // await faz esperar a resposta da api para seguir para a proxima linha
+        const resposta = await fetch('https://neomax.onrender.com/api/requisicao', {  // await faz esperar a resposta da api para seguir para a proxima linha
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({nome, email, proposta})
