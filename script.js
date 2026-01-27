@@ -24,7 +24,7 @@ btn_submit.addEventListener("click", async function(event){  // async faz espera
     };
 
     try{                                                   // try e catch se o servidor estiver fora do ar o site não quebra, exibe que o servidor esta fora do ar
-        const resposta = await emailjs.send('service_4hk253t', 'template_adjg0f9', templateParams);
+        const resposta = await emailjs.send('service_4hk253t', 'template_jkpxa3l', templateParams);
         if(resposta.status == 200){
             document.getElementById("confirmar_proposta").style.display = "flex";
             document.getElementById("form-container").style.display = "none";
